@@ -21,7 +21,7 @@ var (
 type Info struct {
 	BuildTime string
 	Version   string
-	Os        string
+	OS        string
 	Arch      string
 	GoVersion string
 	Commit    string
@@ -41,7 +41,7 @@ func Get() Info {
 	return Info{
 		BuildTime: BuildTime,
 		Version:   Version,
-		Os:        runtime.GOOS,
+		OS:        runtime.GOOS,
 		Arch:      runtime.GOARCH,
 		GoVersion: runtime.Version(),
 		Commit:    Commit,
